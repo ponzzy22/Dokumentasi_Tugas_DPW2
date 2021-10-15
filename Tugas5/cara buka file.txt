@@ -1,0 +1,4 @@
+
+http://127.0.0.1:8000/home    	->membuka halaman beranda
+http://127.0.0.1:8000/user	->membuka halaman user
+http://127.0.0.1:8000/produk	->membuka halaman produk
