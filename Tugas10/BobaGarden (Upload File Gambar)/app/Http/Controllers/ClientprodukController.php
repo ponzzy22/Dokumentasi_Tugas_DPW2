@@ -12,6 +12,7 @@ class ClientprodukController extends Controller
 
     public function index(Produk $produk)
     {
+        
         $user = request()->user();
         $produk = Produk::latest();
 
@@ -30,19 +31,19 @@ class ClientprodukController extends Controller
         // }
 
 
-        $data = $produk->orderBy('created_at','desc')->get();
+        $data = $produk->paginate(8);
         
         
-       
-      
+    
+    
         return view('client.index', compact('data'));
     }
 
 
-    function show(Produk $produk)
+    function show($id)
     {
-        $data['produk'] = $produk;
-        return view('produk.show', $data);
+        $produk = produk::findorfail($id);
+        return view('client.show', compact('produk'));
         
     }
     

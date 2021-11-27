@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddProdukTable extends Migration
+class CreateUserDetailTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,11 @@ class AddProdukTable extends Migration
      */
     public function up()
     {
-        Schema::table('produk', function (Blueprint $table) {
-            $table->string('gambar')->nullable();
+        Schema::create('user_detail', function (Blueprint $table) {
+            $table->integerIncrements('id');
+            $table->integer('id_user');
+            $table->string('no_handphone')->nullable(true);
+            $table->timestamps();
         });
     }
 
@@ -25,6 +28,6 @@ class AddProdukTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('user_detail');
     }
 }

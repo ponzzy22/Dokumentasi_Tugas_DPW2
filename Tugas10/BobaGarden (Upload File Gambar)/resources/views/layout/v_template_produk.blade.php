@@ -8,22 +8,23 @@
     <link rel="icon" type="image/png" href="../assets/img/favicon.ico">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>Ponsianus Jopi Tugas DPW</title>
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+        name='viewport' />
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <!-- CSS Files -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/css/light-bootstrap-dashboard.css?v=2.0.0 " rel="stylesheet" />
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/css/light-bootstrap-dashboard.css?v=2.0.0') }} " rel="stylesheet" />
 
-   
+
 </head>
 
 <body>
 
-    
 
-<!-- BAGIAN PANEL KIRI -->
+
+    <!-- BAGIAN PANEL KIRI -->
     <div class="wrapper">
         <div class="sidebar" data-image="../assets/img/sidebar.png">
             <div class="sidebar-wrapper">
@@ -80,51 +81,51 @@
         </div>
 
 
-@include('layout.v_nav')
+        @include('layout.v_nav')
 
-@yield('content')
-           <!-- HALAMAN UTAMA -->
-          
-@include('layout.v_space')
+        @yield('content')
+        <!-- HALAMAN UTAMA -->
 
-            <!-- BAGIAN KAKI -->
-            <footer class="footer">
-                <div class="container-fluid">
-                    <nav>
-                        <ul class="footer-menu">
-                            <li>
-                                <a href="#">
-                                    Beranda
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Perusahaan
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Portfolio
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    Blog! go blog
-                                </a>
-                            </li>
-                        </ul>
+        @include('layout.v_space')
 
-                        <p class="copyright text-center">
-                            ©
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script>
-                            <a href="#">BobaGarden</a> copyright All
-                        </p>
-                    </nav>
-                </div>
-            </footer>
-        </div>
+        <!-- BAGIAN KAKI -->
+        <footer class="footer">
+            <div class="container-fluid">
+                <nav>
+                    <ul class="footer-menu">
+                        <li>
+                            <a href="#">
+                                Beranda
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Perusahaan
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Blog! go blog
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p class="copyright text-center">
+                        ©
+                        <script>
+                            document.write(new Date().getFullYear())
+                        </script>
+                        <a href="#">BobaGarden</a> copyright All
+                    </p>
+                </nav>
+            </div>
+        </footer>
+    </div>
     </div>
 </body>
 
@@ -139,7 +140,7 @@
 <!--  Google Maps Plugin    -->
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 <!--  Chartist Plugin  -->
-<script src="../assets/js/plugins/chartist.min.js"></script> 
+<script src="../assets/js/plugins/chartist.min.js"></script>
 <!-- <script src="../assets/js/plugins/bootstrap-notify.js"></script> -->
 <script src="../assets/js/light-bootstrap-dashboard.js?v=2.0.0 " type="text/javascript"></script>
 <!-- Light Bootstrap Dashboard DEMO methods, don't include it in your project! -->
