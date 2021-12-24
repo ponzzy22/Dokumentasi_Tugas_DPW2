@@ -1,0 +1,3 @@
+SubDomain 	: http://bunga.informatikapolitap.org/
+Database	: u8912391_tugas_dpw2 (password :Wxtu;DUqYn?x)
+File lokasi	: public_html/bunga
